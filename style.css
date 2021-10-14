@@ -28,7 +28,7 @@ body {
 header {
 	display: grid;
 	place-content: center;
-	margin-left: -180px;
+	margin-left: -120px;
 	margin-right: -40px;
 }
 
