@@ -1,0 +1,118 @@
+html {
+	--blue: #61DBFB;
+	--blue-dark: #1d8099;
+	font-family: Raleway;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	height: 100vh !important;
+	width: 100vw !important;
+	background-image: url('background.jpeg');
+	backdrop-filter:
+		grayscale(100%)
+		brightness(15%)
+		contrast(90%)
+		saturate(100%);
+	background-size: 100%;
+	color: whitesmoke;
+}
+
+.flex {
+	display: grid;
+	grid-template-columns: 11fr 5fr;
+	height: 100%;
+}
+
+header {
+	display: grid;
+	place-content: center;
+	margin-left: -180px;
+	margin-right: -40px;
+}
+
+header h1 {
+	font-weight: 900;
+	max-width: 100%;
+	margin: 0px 68px 0px 0px;
+	font-size: 70px;
+}
+
+header p {
+	font-size: 35px;
+	font-weight: 300;
+	margin: 20px 0px 0px 0px;
+}
+
+header p b {
+	white-space: nowrap;
+}
+
+header footer {
+	color: #EBE1F3;
+	font-size: 22px;
+	font-weight: 300;
+	margin: 20px 0px;
+	padding-top: 20px;
+	border-style: solid;
+	border-width: 0;
+	border-top-width: 7px;
+	border-image: linear-gradient(
+		to right,
+		var(--blue) 0%,
+		var(--blue) 25%,
+		#00000000 100%
+	) 1;
+}
+
+main {
+	position: relative;
+}
+
+main img, main .ring {
+	border-radius: 50%;
+	position: absolute;
+}
+
+main img:first-of-type {
+	top: 241.2px;
+	right: 160px;
+	width: 310px;
+	height: 310px;
+	z-index: 4;
+}
+
+main img:first-of-type + .ring {
+	top: 231.2px;
+	right: 150px;
+	width: 330px;
+	height: 330px;
+	z-index: 3;
+	background-image: linear-gradient(
+		to right,
+		var(--blue),
+		var(--blue-dark)
+	);
+}
+
+main img:nth-of-type(2) {
+	top: 97px;
+	right: 32px;
+	width: 260px;
+	height: 260px;
+	z-index: 2;
+}
+
+main img:nth-of-type(2) + .ring {
+	top: 87px;
+	right: 22px;
+	width: 280px;
+	height: 280px;
+	z-index: 1;
+	background-image: linear-gradient(
+		to right,
+		var(--blue),
+		var(--blue-dark)
+	);
+}
