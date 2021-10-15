@@ -14,3 +14,8 @@ An HTML and CSS-only template for meetup thumbnails, meant to be used for YouTub
 4. In the element inspector, right-click on the `<html>` tag.
 5. Click _Capture node screenshot_.
 6. Retrieve the screenshot from your Downloads folder.
+7. Drop into the ReactJS Dallas Cloudinary account to keep track of it.
+
+### Example Image
+
+!['Example of thumbnail image'](https://res.cloudinary.com/reactjs-dallas/image/upload/v1634259055/talk_thumbnail_preview_ssi2y1.png 'Example of thumbnail image')
