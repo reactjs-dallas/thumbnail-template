@@ -36,11 +36,11 @@ header h1 {
 	font-weight: 900;
 	max-width: 100%;
 	margin: 0px 68px 0px 0px;
-	font-size: 64px;
+	font-size: 76px;
 }
 
 header p {
-	font-size: 35px;
+	font-size: 32px;
 	font-weight: 300;
 	margin: 20px 0px 0px 0px;
 }
@@ -51,7 +51,7 @@ header p b {
 
 header footer {
 	color: #EBE1F3;
-	font-size: 22px;
+	font-size: 24px;
 	font-weight: 300;
 	margin: 20px 0px;
 	padding-top: 20px;
@@ -64,6 +64,14 @@ header footer {
 		var(--blue) 25%,
 		#00000000 100%
 	) 1;
+}
+
+footer strong {
+  font-weight: 600;
+}
+
+footer > div {
+  margin-bottom: 12px;
 }
 
 main {
