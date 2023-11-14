@@ -11,10 +11,7 @@ body {
 	width: 100vw !important;
 	background-image: url('background.jpeg');
 	backdrop-filter:
-		grayscale(100%)
-		brightness(15%)
-		contrast(90%)
-		saturate(100%);
+		grayscale(100%) brightness(15%) contrast(90%) saturate(100%);
 	background-size: 100%;
 	color: whitesmoke;
 }
@@ -36,7 +33,7 @@ header h1 {
 	font-weight: 900;
 	max-width: 100%;
 	margin: 0px 68px 0px 0px;
-	font-size: 76px;
+	font-size: 56px;
 }
 
 header p {
@@ -58,27 +55,26 @@ header footer {
 	border-style: solid;
 	border-width: 0;
 	border-top-width: 7px;
-	border-image: linear-gradient(
-		to right,
-		var(--blue) 0%,
-		var(--blue) 25%,
-		#00000000 100%
-	) 1;
+	border-image: linear-gradient(to right,
+			var(--blue) 0%,
+			var(--blue) 25%,
+			#00000000 100%) 1;
 }
 
 footer strong {
-  font-weight: 600;
+	font-weight: 600;
 }
 
-footer > div {
-  margin-bottom: 12px;
+footer>div {
+	margin-bottom: 12px;
 }
 
 main {
 	position: relative;
 }
 
-main img, main .ring {
+main img,
+main .ring {
 	border-radius: 50%;
 	position: absolute;
 }
@@ -91,17 +87,15 @@ main img:first-of-type {
 	z-index: 4;
 }
 
-main img:first-of-type + .ring {
+main img:first-of-type+.ring {
 	top: 231.2px;
 	right: 190px;
 	width: 330px;
 	height: 330px;
 	z-index: 3;
-	background-image: linear-gradient(
-		to right,
-		var(--blue),
-		var(--blue-dark)
-	);
+	background-image: linear-gradient(to right,
+			var(--blue),
+			var(--blue-dark));
 }
 
 main img:nth-of-type(2) {
@@ -112,15 +106,13 @@ main img:nth-of-type(2) {
 	z-index: 2;
 }
 
-main img:nth-of-type(2) + .ring {
+main img:nth-of-type(2)+.ring {
 	top: 87px;
 	right: 62px;
 	width: 280px;
 	height: 280px;
 	z-index: 1;
-	background-image: linear-gradient(
-		to right,
-		var(--blue),
-		var(--blue-dark)
-	);
+	background-image: linear-gradient(to right,
+			var(--blue),
+			var(--blue-dark));
 }
